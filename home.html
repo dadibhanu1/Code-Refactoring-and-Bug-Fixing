@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes taking Application</title>
+    <center><h1>Welcome To Bhanu`s Note Taking Application</h1></center>
+</head>
+<body>
+    <center>
+    <form action="" method="post">
+        <input type="text" name="note" placeholder="Enter a note">
+        <button type="submit">Add Note</button>
+    </form>
+    </center>
+    
+    <ul>
+    
+    {% for note in notes if note is not none%}
+        <li>{{ note }}</li>
+    {% endfor %}
+        </ul>
+       <center> <img alt="A man moving his hands away from his forehead sideways, in a mind-explosion gesture. An overlaid animation enforces the explosion character" width="500" height="300" src="https://th.bing.com/th/id/OIP.rV7fhAAIOe6v_2c0gkf-HwHaEK?w=302&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"></center>
+
+    
+</body>
+</html>
